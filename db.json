@@ -1,0 +1,242 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "firstName": "neha",
+      "lastName": "bairamwar",
+      "email": "nehabi@gmai.com",
+      "age": "23",
+      "mobile": "878787657",
+      "address": "kharadi",
+      "tags": "tags1",
+      "images": "assets/laptop.jpg",
+      "states": [
+        {
+          "name": "Dhaka "
+        },
+        {
+          "name": "Chiba"
+        },
+        {
+          "name": "Maharashtra"
+        },
+        {
+          "name": "Azerbaijan"
+        },
+        {
+          "name": "Darwin"
+        }
+      ],
+      "countrys": [
+        {
+          "name1": "Bangladesh"
+        },
+        {
+          "name1": "Japan"
+        },
+        {
+          "name1": "India"
+        },
+        {
+          "name1": "Armenia"
+        },
+        {
+          "name1": "Australia"
+        }
+      ]
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 2
+    },
+    {
+      "firstName": "sunita",
+      "lastName": "bezalwar",
+      "email": "sunita@gmail.com",
+      "age": 43,
+      "mobile": "9466576882",
+      "address": "Rabbit tortoise technology IT Tower",
+      "tags": "tags2",
+      "states": " Maharashtra",
+      "countrys": " India",
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 5
+    },
+    {
+      "firstName": "sunita",
+      "lastName": "bairamwar",
+      "email": "sunita@gmail.com",
+      "age": 41,
+      "mobile": "9999999875",
+      "address": "Rabbit tortoise technology IT Tower",
+      "tags": "",
+      "states": " Dhaka",
+      "countrys": " Bangladesh",
+      "id": 6
+    },
+    {
+      "firstName": "sunita",
+      "lastName": "bairamwar",
+      "email": "sunita@gmail.com",
+      "age": 41,
+      "mobile": "9999999875",
+      "address": "Rabbit tortoise technology IT Tower",
+      "tags": "",
+      "states": " Dhaka",
+      "countrys": " Bangladesh",
+      "id": 7
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 8
+    },
+    {
+      "firstName": "pankaj",
+      "lastName": "bairamewar",
+      "email": "pankaj@gmail.com",
+      "age": 42,
+      "mobile": "7665435264",
+      "address": "nagpur",
+      "tags": "tag8",
+      "states": " Chiba",
+      "countrys": " Japan",
+      "id": 9
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 10
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 11
+    },
+    {
+      "firstName": "nikhil",
+      "lastName": "bairamwar",
+      "email": "nikhil@gmail.com",
+      "age": 40,
+      "mobile": "09764520882",
+      "address": "Rabbit tortoise technology IT Tower",
+      "tags": "",
+      "states": " Maharashtra",
+      "countrys": " India",
+      "id": 12
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 13
+    },
+    {
+      "firstName": "pari",
+      "lastName": "bairamwar",
+      "email": "pari@gmail.com",
+      "age": 9,
+      "mobile": "7645647475",
+      "address": "gondia",
+      "tags": "tag13",
+      "states": " Maharashtra",
+      "countrys": " India",
+      "id": 14
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 15
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "age": "",
+      "mobile": "",
+      "address": "",
+      "tags": "",
+      "states": "",
+      "countrys": "",
+      "id": 16
+    },
+    {
+      "firstName": "pranita",
+      "lastName": "bhagale",
+      "email": "pranita@gmail.com",
+      "age": 17,
+      "mobile": "8764564444",
+      "address": "gondia",
+      "tags": "tag9",
+      "states": " Darwin",
+      "countrys": " Australia",
+      "id": 17
+    },
+    {
+      "firstName": "komal",
+      "lastName": "doye",
+      "email": "komal@gmail.com",
+      "age": 30,
+      "mobile": "8476756464",
+      "address": "kharadi pune",
+      "tags": "tag67",
+      "states": " Dhaka",
+      "countrys": " Bangladesh",
+      "id": 19
+    }
+  
+  ]
+}

@@ -1,0 +1,40 @@
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar.navbar-dark {
+  margin-left: 599px;
+  margin-bottom: 464px;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+.navbar-dark {
+  margin-left: 332px;
+  margin-bottom: 74px;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom:330px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.underline{
+  color:#318efd;
+  font-weight: bold;
+}
+.modal-header{
+  background-color: #318efd;
+}

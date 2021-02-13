@@ -1,0 +1,50 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "firstName": "neha",
+      "lastName": "bairamwar",
+      "email": "nehabi@gmai.com",
+      "age": "23",
+      "mobile": "878787657",
+      "address": "kharadi",
+      "tags": "tags1",
+      "images": "assets/laptop.jpg",
+      "states": [
+        {
+          "name": "Dhaka "
+        },
+        {
+          "name": "Chiba"
+        },
+        {
+          "name": "Maharashtra"
+        },
+        {
+          "name": "Azerbaijan"
+        },
+        {
+          "name": "Darwin"
+        }
+      ],
+      "countrys": [
+        {
+          "name1": "Bangladesh"
+        },
+        {
+          "name1": "Japan"
+        },
+        {
+          "name1": "India"
+        },
+        {
+          "name1": "Armenia"
+        },
+        {
+          "name1": "Australia"
+        }
+      ]
+    }
+  
+  ]
+}

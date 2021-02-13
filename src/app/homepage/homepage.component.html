@@ -1,0 +1,263 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/laptop.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">EMPLOYERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="looking">
+          <h3>I'm looking for..</h3>
+        </div>
+        <nav class="navbar-dark">
+          <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>  -->
+        </nav>
+        <button class="btn btn-primary" (click)="open(content)">Register </button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/laptop.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">EMPLOYERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="looking">
+          <h3>I'm looking for..</h3>
+        </div>
+        <nav class="navbar-dark">
+          <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" formControlName="search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>  -->
+        </nav>
+        <button class="btn btn-primary" (click)="open(content)">Register </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/laptop.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="">EMPLOYERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="looking">
+          <h3>I'm looking for..</h3>
+        </div>
+        <nav class="navbar-dark">
+          <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>  -->
+        </nav>
+        <button class="btn btn-primary" (click)="open(content)">Register </button>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+  <div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
+    <p class="underline">------------</p>
+    <p>Resize this responsive page to see the effect Resize this responsive page to see the effect</p>
+    <span>effect Resize this responsive page to see the effect</span>
+  </div>
+
+
+
+
+  <!-- modal -->
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Register</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="card">
+              <article class="card-body">
+                <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+                  <div class="form-row">
+                    <div class="col form-group">
+                      <label>First name </label>
+                      <input type="text" formControlName="firstName" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                      <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                      </div>
+                    </div>
+                    <div class="col form-group">
+                      <label>Last name </label>
+                      <input type="text" formControlName="lastName" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                      <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col form-group">
+                    <label>Email </label>
+                    <input type="text" formControlName="email" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors.required">Email is required</div>
+                      <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="vol">Age</label>
+                    <!-- <input type="range" id="vol" name="vol" formControlName="age" min="0" max="50"> -->
+                    <input type="range" formControlName="age" id="vol" name="vol" min="0" max="50" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.age.errors }" />
+                    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                      <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input formControlName="mobile" id="mobileNumber" type="text" class="form-control">
+                    <div *ngIf="f.mobile.touched && f.mobile.invalid" class="alert alert-danger">
+                      <div *ngIf="f.mobile.errors.required">Mobile Number is required.</div>
+                      <div *ngIf="f.mobile.errors.pattern">Please, Enter 10 digit Mobile Number.</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>State</label>
+                    <select name="status" formControlName="states" class="form-control" placeholder="">
+                      <option *ngFor="let state of states;" value=" {{ state.name}}">{{ state.name }}</option>
+                    </select>
+                  </div>
+                  <!-- <pre>{{ addForm.value | json }}</pre> -->
+                  <div class="form-group">
+                    <label>Country</label>
+                    <select name="" class="form-control" placeholder="" formControlName="countrys">
+                      <option *ngFor="let country of countrys;" value=" {{ country.name1}}">{{ country.name1}}</option>
+                    </select>
+                  </div>
+                  <!-- <pre>{{ addForm1.value | json }}</pre> -->
+                  <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" formControlName="address" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+                    <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                      <div *ngIf="f.address.errors.required">Address is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Tags</label>
+                    <input type="text" formControlName="tags" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.tags.errors }" />
+                    <div *ngIf="submitted && f.tags.errors" class="invalid-feedback">
+                      <div *ngIf="f.tags.errors.required">Tags is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div>
+                      <div>
+                        <label for="filePicker">Choose or drag a file:</label><br>
+                        <input type="file" id="filePicker" (change)="handleFileSelect($event)">
+                      </div>
+                      <br>
+                      <div>
+                        <textarea id="base64textarea" placeholder="Base64 will appear here" cols="50"
+                          rows="15">{{base64textString}}</textarea>
+                      </div>
+
+                      <img width="100" height="100" [src]="base64textString">
+                    </div>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" (click)="modal.close('Save click')">submit</button>
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">cancal</button>
+    </div>
+  </ng-template>
